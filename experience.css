@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items at the top */
+    position: relative;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transform: translateY(-40%);
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.experience .image {
+    height: 80px;
+    width: auto;
+}
+
+.sec_container {
+    text-align: left;
+}
+
+.sec_container h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.sec_container p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* footer css */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (portrait and landscape) */
+@media only screen and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: row;
+        /* align-items: center; */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .experience {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience .image {
+        height: 60px;
+    }
+
+    .sec_container {
+        text-align: center;
+    }
+}
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile devices */
+/* Media Queries for Responsiveness */
+
+/* Tablets (portrait and landscape) */
+@media only screen and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .experience {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience .image {
+        height: 60px;
+    }
+
+    .sec_container {
+        text-align: center;
+    }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .profile-image {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-right: 0;
+    }
+
+    .page-header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
